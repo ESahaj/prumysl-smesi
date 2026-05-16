@@ -382,408 +382,426 @@
 
   <script>
     const questionBank = [
-      {
-        question: "Který český chemik získal Nobelovu cenu za objev polarografu?",
-        answers: ["Jaroslav Heyrovský", "Otto Wichterle", "Antonín Holý", "František Šorm"],
-        correct: 0,
-        explanation: "Jaroslav Heyrovský získal Nobelovu cenu za chemii za objev a rozvoj polarografické metody."
-      },
-      {
-        question: "Jak se nazývá skleněná nádoba používaná alchymisty při destilaci?",
-        answers: ["Křivule", "Byreta", "Exsikátor", "Kádinka"],
-        correct: 0,
-        explanation: "Křivule je zahnutá skleněná nádoba, která se dříve používala mimo jiné při destilaci."
-      },
-      {
-        question: "Jaký je správný postup při ředění kyseliny vodou?",
-        answers: ["Kyselina se pomalu vlévá do vody", "Voda se rychle vleje do kyseliny", "Obě kapaliny se slívají současně", "Na pořadí vůbec nezáleží"],
-        correct: 0,
-        explanation: "Platí pravidlo: kyselinu lijeme do vody, nikdy ne vodu do kyseliny."
-      },
-      {
-        question: "Jak lze bezpečně zlikvidovat rozlitou rtuť?",
-        answers: ["Posypat sírou", "Vysát vysavačem", "Spláchnout do odpadu", "Setřít holou rukou"],
-        correct: 0,
-        explanation: "Rtuť je toxická. V laboratoři se postupuje podle bezpečnostních pokynů, často se používá síra a odborný sběr."
-      },
-      {
-        question: "Jak se nazývá směs dvou kyselin, která rozpouští i zlato?",
-        answers: ["Luční voda", "Lučavka královská", "Tvrdá voda", "Vápenná voda"],
-        correct: 1,
-        explanation: "Lučavka královská je směs koncentrované kyseliny chlorovodíkové a dusičné v poměru 3:1."
-      },
-      {
-        question: "Na která dvě japonská města byly v závěru druhé světové války svrženy atomové bomby?",
-        answers: ["Hirošima a Nagasaki", "Tokio a Kjóto", "Ósaka a Sapporo", "Nara a Jokohama"],
-        correct: 0,
-        explanation: "Atomové bomby byly svrženy na Hirošimu a Nagasaki v srpnu 1945."
-      },
-      {
-        question: "K čemu slouží Kemlerův a UN kód?",
-        answers: ["K označování nebezpečných látek při přepravě", "K měření teploty varu", "K výpočtu pH", "K pojmenování chemických sloučenin"],
-        correct: 0,
-        explanation: "Tyto kódy pomáhají identifikovat nebezpečí a konkrétní látku při přepravě."
-      },
-      {
-        question: "Který kov roztaje pouhým držením v ruce?",
-        answers: ["Gallium", "Železo", "Měď", "Hliník"],
-        correct: 0,
-        explanation: "Gallium má teplotu tání přibližně 30 °C, takže může tát v teplé dlani."
-      },
-      {
-        question: "K čemu slouží byreta?",
-        answers: ["K přesnému odměřování objemu při titraci", "K drcení pevných látek", "K ohřívání nad plamenem", "K filtrování suspenze"],
-        correct: 0,
-        explanation: "Byreta umožňuje velmi přesné dávkování kapaliny, například při titraci."
-      },
-      {
-        question: "Jaká hodnota pH odpovídá neutrálnímu roztoku?",
-        answers: ["7", "0", "14", "1"],
-        correct: 0,
-        explanation: "Neutrální roztok má pH přibližně 7."
-      },
-      {
-        question: "Kdo je považován za autora periodické tabulky prvků?",
-        answers: ["Dmitrij Ivanovič Mendělejev", "Albert Einstein", "Marie Curie-Skłodowská", "Isaac Newton"],
-        correct: 0,
-        explanation: "Dmitrij Ivanovič Mendělejev sestavil jednu z prvních periodických tabulek prvků."
-      },
-      {
-        question: "Co uděláš jako první, když se v laboratoři stane nehoda?",
-        answers: ["Okamžitě upozorním učitele", "Budu to tajit", "Začnu to nenápadně uklízet", "Uteču ze třídy"],
-        correct: 0,
-        explanation: "Při nehodě je nejdůležitější ihned informovat učitele nebo odpovědnou osobu."
-      },
-{
-  question: "Co v laboratoři nikdy neděláme s chemikáliemi?",
-  answers: ["Neochutnáváme je", "Popisujeme je", "Pozorujeme je", "Vážíme je"],
-  correct: 0,
-  explanation: "V laboratoři se chemikálie nikdy neochutnávají, protože mohou být zdraví nebezpečné."
-},
-{
-  question: "Co musíš v laboratoři nosit kvůli ochraně očí?",
-  answers: ["Ochranné brýle", "Sluchátka", "Čepici", "Šálu"],
-  correct: 0,
-  explanation: "Ochranné brýle chrání oči před prsknutím chemikálie nebo úlomkem skla."
-},
-{
-  question: "Co máš udělat při jakémkoliv poranění v laboratoři?",
-  answers: ["Ihned ho ohlásit učiteli", "Zatajit ho", "Odejít domů", "Pokračovat v práci"],
-  correct: 0,
-  explanation: "Každé poranění se musí ihned oznámit učiteli nebo odpovědné osobě."
-},
-{
-  question: "Co platí pro dlouhé vlasy při práci v laboratoři?",
-  answers: ["Musí být sepnuté", "Musí být rozpuštěné", "Musí být mokré", "Musí být zakryté papírem"],
-  correct: 0,
-  explanation: "Dlouhé vlasy musí být sepnuté, aby se nezachytily nebo nevznítily."
-},
-{
-  question: "Co nesmíš nikdy nechat bez dozoru?",
-  answers: ["Zapálený kahan", "Zavřenou učebnici", "Prázdnou kádinku", "Sešit s poznámkami"],
-  correct: 0,
-  explanation: "Zapálený kahan představuje riziko požáru, proto nesmí zůstat bez dozoru."
-},
-{
-  question: "Co se dělá po ukončení laboratorní práce?",
-  answers: ["Umyjí se pomůcky, uklidí místo a umyjí ruce", "Pomůcky se nechají na stole", "Chemikálie se vrátí kamkoliv", "Ruce se nemyjí"],
-  correct: 0,
-  explanation: "Po práci je nutné uklidit pracovní místo, očistit pomůcky a umýt si ruce."
-},
-{
-  question: "Jak správně ověřujeme zápach látky?",
-  answers: ["Mávnutím ruky směrem k nosu", "Přímým přičichnutím", "Ochutnáním", "Přiložením oka k látce"],
-  correct: 0,
-  explanation: "Výpary se ověřují z bezpečné vzdálenosti mávnutím ruky, nikdy přímým čicháním."
-},
-{
-  question: "Co se při ředění kyseliny vlévá do čeho?",
-  answers: ["Kyselina do vody", "Voda do kyseliny", "Obě látky současně", "Na pořadí nezáleží"],
-  correct: 0,
-  explanation: "Při ředění se vždy pomalu vlévá kyselina do vody, nikdy naopak."
-},
-{
-  question: "Co se nesmí dělat s použitými chemikáliemi?",
-  answers: ["Vracet je zpět do zásobních lahví", "Likvidovat podle pokynů", "Označit je", "Odevzdat je učiteli"],
-  correct: 0,
-  explanation: "Použité chemikálie se nevracejí do zásobních lahví, aby nedošlo ke znečištění obsahu."
-},
-{
-  question: "Co musí být správně označeno na nádobách s chemikáliemi?",
-  answers: ["Štítky", "Víčka barvou podle nálady", "Cena látky", "Jméno posledního žáka"],
-  correct: 0,
-  explanation: "Štítky zabraňují záměně chemikálií a informují o jejich nebezpečnosti."
-},
-{
-  question: "Čím se zabývá chemie?",
-  answers: ["Látkami, jejich složením, vlastnostmi a přeměnami", "Pouze hvězdami", "Pouze výpočty rychlosti", "Pouze stavbou mostů"],
-  correct: 0,
-  explanation: "Chemie zkoumá chemické látky, jejich vlastnosti, složení a chemické reakce."
-},
-{
-  question: "Jak se nazývají přeměny, při kterých z původních látek vznikají látky nové?",
-  answers: ["Chemické reakce", "Fyzikální jednotky", "Mechanické pohyby", "Optické klamy"],
-  correct: 0,
-  explanation: "Při chemických reakcích se původní látky mění na látky nové."
-},
-{
-  question: "Který výrobek patří mezi produkty chemického průmyslu?",
-  answers: ["Šampon", "Kamenný oblouk v přírodě", "Dřevěný pařez", "Sluneční záření"],
-  correct: 0,
-  explanation: "Mycí prostředky a kosmetika, například šampony, jsou produkty chemického průmyslu."
-},
-{
-  question: "Co jsou antibiotika?",
-  answers: ["Léky proti bakteriálním infekcím", "Látky proti plevelům", "Barviva do plastů", "Ochranné pomůcky"],
-  correct: 0,
-  explanation: "Antibiotika se používají k potlačení infekcí bakteriálního původu."
-},
-{
-  question: "Co jsou antipyretika?",
-  answers: ["Léky snižující horečku", "Látky hubící hmyz", "Pomůcky k destilaci", "Plyny pod tlakem"],
-  correct: 0,
-  explanation: "Antipyretika jsou léčiva, která snižují zvýšenou tělesnou teplotu."
-},
-{
-  question: "Co jsou herbicidy?",
-  answers: ["Přípravky proti nežádoucím rostlinám", "Přípravky proti horečce", "Látky na výrobu skla", "Nádoby k titraci"],
-  correct: 0,
-  explanation: "Herbicidy se používají k likvidaci nežádoucích rostlin, například plevelů."
-},
-{
-  question: "Co jsou insekticidy?",
-  answers: ["Přípravky k hubení hmyzu", "Léky proti bolesti", "Přípravky proti plísním", "Skleněné laboratorní nádoby"],
-  correct: 0,
-  explanation: "Insekticidy slouží k hubení hmyzu."
-},
-{
-  question: "Co jsou fungicidy?",
-  answers: ["Přípravky proti houbám a plísním", "Přípravky proti hmyzu", "Léky proti horečce", "Kovy s nízkou teplotou tání"],
-  correct: 0,
-  explanation: "Fungicidy se používají proti houbám a plísním."
-},
-{
-  question: "Co jsou aditiva v potravinářství?",
-  answers: ["Přídatné látky upravující vlastnosti potravin", "Výhradně jedovaté plyny", "Laboratorní sklo", "Přírodní horniny"],
-  correct: 0,
-  explanation: "Aditiva jsou přídatné látky používané ke zlepšení nebo úpravě vlastností potravin."
-},
-{
-  question: "Co označují H-věty na štítku chemikálie?",
-  answers: ["Nebezpečnost látky nebo směsi", "Návod k domácímu vaření", "Cenu výrobku", "Barvu obalu"],
-  correct: 0,
-  explanation: "H-věty jsou věty o nebezpečnosti chemických látek a směsí."
-},
-{
-  question: "Co označují P-věty na štítku chemikálie?",
-  answers: ["Pokyny pro bezpečné zacházení", "Pouze chemický vzorec", "Název výrobce", "Datum narození chemika"],
-  correct: 0,
-  explanation: "P-věty dávají pokyny pro bezpečné zacházení s chemickými látkami a směsmi."
-},
-{
-  question: "Co znamená piktogram s lebkou a zkříženými hnáty?",
-  answers: ["Toxická látka", "Oxidující látka", "Plyn pod tlakem", "Dráždivá látka"],
-  correct: 0,
-  explanation: "Lebka se zkříženými hnáty označuje toxické neboli jedovaté látky."
-},
-{
-  question: "Co znamená piktogram s plamenem?",
-  answers: ["Hořlavá látka", "Látka pod tlakem", "Látka nebezpečná pro životní prostředí", "Radioaktivní látka"],
-  correct: 0,
-  explanation: "Piktogram s plamenem upozorňuje na hořlavé látky."
-},
-{
-  question: "Co znamená piktogram s vykřičníkem?",
-  answers: ["Dráždivá nebo zdraví škodlivá látka", "Výbušnina", "Tlaková láhev", "Biologická látka"],
-  correct: 0,
-  explanation: "Vykřičník označuje například dráždivé látky nebo látky škodlivé pro zdraví."
-},
-{
-  question: "Co znamená piktogram s mrtvou rybou a stromem?",
-  answers: ["Nebezpečí pro životní prostředí", "Látka vhodná k pití", "Látka bez rizika", "Ochranná pomůcka"],
-  correct: 0,
-  explanation: "Tento piktogram upozorňuje na látky nebezpečné pro životní prostředí."
-},
-{
-  question: "Co znamená neutralizace?",
-  answers: ["Reakce kyseliny s hydroxidem za vzniku soli a vody", "Rozpouštění cukru ve vodě", "Zahřívání kovu", "Míchání dvou plynů bez reakce"],
-  correct: 0,
-  explanation: "Neutralizace je reakce kyseliny se zásadou, při které vzniká sůl a voda."
-},
-{
-  question: "Co uděláš při polití kyselinou nebo hydroxidem?",
-  answers: ["Dlouze oplachuješ vodou a vyhledáš pomoc", "Neutralizuješ to jinou chemikálií", "Zakryješ místo bez oplachu", "Neuděláš nic"],
-  correct: 0,
-  explanation: "Postižené místo se dlouze oplachuje proudem vody. Neutralizace na kůži by mohla poleptání zhoršit."
-},
-{
-  question: "K čemu slouží Kemlerův kód při přepravě?",
-  answers: ["K označení druhu nebezpečí", "K označení ceny nákladu", "K označení značky auta", "K měření objemu cisterny"],
-  correct: 0,
-  explanation: "Kemlerův kód označuje charakter nebezpečí přepravované látky."
-},
-{
-  question: "K čemu slouží UN kód při přepravě?",
-  answers: ["K identifikaci konkrétní nebezpečné látky", "K určení rychlosti vozidla", "K měření tlaku v pneumatikách", "K označení řidiče"],
-  correct: 0,
-  explanation: "UN kód slouží k identifikaci konkrétní nebezpečné látky při přepravě."
-},
-{
-  question: "Jak se nazývá předchůdkyně chemie?",
-  answers: ["Alchymie", "Astronomie", "Astrologie", "Kvantová fyzika"],
-  correct: 0,
-  explanation: "Alchymie je považována za předchůdkyni moderní chemie."
-},
-{
-  question: "Co byl kámen mudrců podle představ alchymistů?",
-  answers: ["Látka schopná přeměnit běžné kovy ve zlato", "Nádoba na kyseliny", "Druh laboratorních brýlí", "Přírodní magnet"],
-  correct: 0,
-  explanation: "Alchymisté věřili, že kámen mudrců dokáže přeměnit obyčejné kovy ve zlato."
-},
-{
-  question: "Který filozof spojoval hmotu se čtyřmi živly?",
-  answers: ["Aristoteles", "James Price", "Jaroslav Heyrovský", "Alfred Nobel"],
-  correct: 0,
-  explanation: "Aristoteles vycházel z teorie čtyř živlů: země, ohně, vody a vzduchu."
-},
-{
-  question: "Které čtyři živly uváděla starověká teorie hmoty?",
-  answers: ["Země, oheň, voda, vzduch", "Kov, sklo, plast, dřevo", "Sůl, cukr, voda, olej", "Led, pára, mlha, déšť"],
-  correct: 0,
-  explanation: "Podle starověké teorie se hmota skládala ze čtyř živlů: země, ohně, vody a vzduchu."
-},
-{
-  question: "Kdo je spojován s takzvanou Glauberovou solí?",
-  answers: ["Johann Rudolf Glauber", "Isaac Newton", "Paracelsus", "James Price"],
-  correct: 0,
-  explanation: "Johann Rudolf Glauber je spojován se síranem sodným, známým jako Glauberova sůl."
-},
-{
-  question: "Co je Glauberova sůl?",
-  answers: ["Síran sodný", "Chlorid sodný", "Kyselina sírová", "Oxid uhličitý"],
-  correct: 0,
-  explanation: "Glauberova sůl je síran sodný."
-},
-{
-  question: "Který alchymista prosazoval, že cílem alchymie má být příprava léků?",
-  answers: ["Paracelsus", "James Price", "Aristoteles", "Rabi Löw"],
-  correct: 0,
-  explanation: "Paracelsus zdůrazňoval využití alchymie v medicíně a při přípravě léků."
-},
-{
-  question: "Jaké laboratorní techniky znali už alchymisté?",
-  answers: ["Destilaci, sublimaci a krystalizaci", "Chromatografii", "Elektrolýzu", "Centrifugace"],
-  correct: 0,
-  explanation: "Alchymisté používali techniky jako destilace, sublimace a krystalizace."
-},
-{
-  question: "K čemu slouží kádinka?",
-  answers: ["K práci s kapalinami v laboratoři", "K měření elektrického proudu", "K psaní protokolu", "K ochraně očí"],
-  correct: 0,
-  explanation: "Kádinka je běžná laboratorní nádoba používaná při práci s kapalinami."
-},
-{
-  question: "K čemu slouží třecí miska s tloučkem?",
-  answers: ["K drcení a roztírání pevných látek", "K přesnému měření objemu", "K ochraně rukou", "K chlazení par"],
-  correct: 0,
-  explanation: "Třecí miska s tloučkem se používá k rozdrcení nebo rozetření pevných látek."
-},
-{
-  question: "K čemu slouží odměrný válec?",
-  answers: ["K odměřování objemu kapalin", "K zahřívání plamenem", "K zachytávání plynů pod tlakem", "K filtrování vzduchu"],
-  correct: 0,
-  explanation: "Odměrný válec se používá k měření objemu kapalin."
-},
-{
-  question: "K čemu slouží laboratorní chladič?",
-  answers: ["Ke chlazení par při destilaci", "K zapalování kahanu", "K vážení prášků", "K měření pH"],
-  correct: 0,
-  explanation: "Chladič ochlazuje páry, které pak kondenzují zpět na kapalinu."
-},
-{
-  question: "K čemu slouží Petriho miska?",
-  answers: ["K práci s malým množstvím vzorku nebo kulturami", "K měření přesného objemu kyseliny", "K hoření plynu", "K uchycení zkumavky"],
-  correct: 0,
-  explanation: "Petriho miska je mělká laboratorní miska využívaná například pro vzorky nebo kultury."
-},
-{
-  question: "Která vlastnost látky říká, zda látka vede elektrický proud?",
-  answers: ["Vodivost", "Barva", "Zápach", "Objem"],
-  correct: 0,
-  explanation: "Vodivost vyjadřuje schopnost látky vést elektrický proud."
-},
-{
-  question: "Jak se nazývá změna z pevného skupenství na kapalné?",
-  answers: ["Tání", "Tuhnutí", "Sublimace", "Kondenzace"],
-  correct: 0,
-  explanation: "Přechod z pevného skupenství do kapalného se nazývá tání."
-},
-{
-  question: "Jak se nazývá změna z kapalného skupenství na plynné?",
-  answers: ["Vypařování", "Tuhnutí", "Desublimace", "Krystalizace"],
-  correct: 0,
-  explanation: "Přechod kapaliny na plyn se nazývá vypařování."
-},
-{
-  question: "Jak se nazývá změna z plynného skupenství na kapalné?",
-  answers: ["Kondenzace", "Tání", "Sublimace", "Tuhnutí"],
-  correct: 0,
-  explanation: "Přechod plynu na kapalinu se nazývá kondenzace neboli zkapalnění."
-},
-{
-  question: "Jak se nazývá změna z pevného skupenství přímo na plynné?",
-  answers: ["Sublimace", "Tání", "Kondenzace", "Tuhnutí"],
-  correct: 0,
-  explanation: "Sublimace je přechod z pevného skupenství přímo do plynného."
-},
-{
-  question: "Jak se nazývá změna z plynného skupenství přímo na pevné?",
-  answers: ["Desublimace", "Vypařování", "Tání", "Var"],
-  correct: 0,
-  explanation: "Desublimace je přechod z plynného skupenství přímo do pevného."
-},
-{
-  question: "Které skupenství má stálý tvar i objem?",
-  answers: ["Pevné", "Kapalné", "Plynné", "Plazma vždy při pokojové teplotě"],
-  correct: 0,
-  explanation: "Pevné látky mají stálý tvar i objem."
-},
-{
-  question: "Které skupenství má stálý objem, ale tvar podle nádoby?",
-  answers: ["Kapalné", "Pevné", "Plynné", "Žádné"],
-  correct: 0,
-  explanation: "Kapaliny mají stálý objem, ale tvar zaujímají podle nádoby."
-},
-{
-  question: "Které skupenství nemá stálý tvar ani stálý objem?",
-  answers: ["Plynné", "Pevné", "Kapalné", "Krystalické"],
-  correct: 0,
-  explanation: "Plyny nemají stálý tvar ani objem a vyplňují dostupný prostor."
-},
-{
-  question: "Co je plazma?",
-  answers: ["Skupenství vznikající za velmi vysokých teplot", "Druh laboratorního skla", "Lék proti horečce", "Typ piktogramu"],
-  correct: 0,
-  explanation: "Plazma vzniká za velmi vysokých teplot a vyskytuje se například v ohni, blescích nebo polární záři."
-},
-{
-  question: "Jaký fyzikální děj probíhá při tání ledu?",
-  answers: ["Mění se skupenství, ale ne chemické složení", "Vzniká nová chemická látka", "Vzniká kov", "Probíhá neutralizace"],
-  correct: 0,
-  explanation: "Tání ledu je fyzikální děj, protože se mění pouze skupenství vody."
-},
-{
-  question: "Který z uvedených dějů je chemický?",
-  answers: ["Rezavění železa", "Tání ledu", "Vaření vody", "Rozdrcení křídy"],
-  correct: 0,
-  explanation: "Rezavění železa je chemický děj, protože vznikají nové látky."
-},
-{
-  question: "Který z uvedených dějů je fyzikální?",
-  answers: ["Filtrace odpadní vody", "Hoření síry", "Spalování benzinu", "Trávení potravy"],
-  correct: 0,
-  explanation: "Filtrace je fyzikální děj, protože se při ní nemění chemické složení látek."
-}
+  {
+    question: "Co je chemicky čistá látka?",
+    answers: ["Látka složená z částic jednoho druhu se stálým složením", "Směs několika látek", "Látka, ve které probíhá chemická reakce", "Látka složená vždy jen z kovů"],
+    correct: 0,
+    explanation: "Chemicky čistá látka je tvořena částicemi jednoho druhu a má stálé složení i vlastnosti."
+  },
+  {
+    question: "Jak se jinak nazývá chemicky čistá látka?",
+    answers: ["Chemické individuum", "Heterogenní látka", "Koloid", "Filtrát"],
+    correct: 0,
+    explanation: "Chemicky čistá látka se označuje také jako chemické individuum."
+  },
+  {
+    question: "Která z možností je příkladem chemicky čisté látky?",
+    answers: ["Destilovaná voda", "Vzduch", "Beton", "Mléko"],
+    correct: 0,
+    explanation: "Destilovaná voda je chemicky čistá látka, protože neobsahuje další rozpuštěné složky."
+  },
+  {
+    question: "Co je směs?",
+    answers: ["Látka složená ze dvou a více chemicky čistých látek", "Látka složená pouze ze stejných atomů", "Látka, která má vždy stejné složení", "Látka, kterou nelze oddělit fyzikálními metodami"],
+    correct: 0,
+    explanation: "Směs se skládá ze dvou a více chemicky čistých látek, kterým říkáme složky."
+  },
+  {
+    question: "Co platí pro složky směsi?",
+    answers: ["Mezi složkami neprobíhají chemické reakce", "Vždy vzniká nová látka", "Složky se nedají oddělit", "Složky jsou vždy viditelné okem"],
+    correct: 0,
+    explanation: "Ve směsi mezi složkami neprobíhá chemická reakce, a proto je často můžeme oddělit fyzikálními metodami."
+  },
+  {
+    question: "Co je prvek?",
+    answers: ["Látka složená ze stejných atomů", "Látka složená z různých atomů", "Směs dvou kapalin", "Roztok pevné látky v kapalině"],
+    correct: 0,
+    explanation: "Prvek je chemicky čistá látka složená ze stejných atomů."
+  },
+  {
+    question: "Co je sloučenina?",
+    answers: ["Látka složená z různých atomů", "Látka složená pouze ze stejných atomů", "Směs pevných látek", "Kapalina získaná filtrací"],
+    correct: 0,
+    explanation: "Sloučenina je chemicky čistá látka složená z různých atomů."
+  },
+  {
+    question: "Jak se nazývá směs, jejíž složky nemůžeme rozeznat okem?",
+    answers: ["Stejnorodá směs", "Různorodá směs", "Suspenze", "Emulze"],
+    correct: 0,
+    explanation: "U stejnorodých směsí nejsou jednotlivé složky rozeznatelné okem."
+  },
+  {
+    question: "Jak se nazývá směs, jejíž složky můžeme rozeznat okem, lupou nebo mikroskopem?",
+    answers: ["Různorodá směs", "Stejnorodá směs", "Chemicky čistá látka", "Sloučenina"],
+    correct: 0,
+    explanation: "Různorodé směsi mají složky rozeznatelné okem, lupou nebo mikroskopem."
+  },
+  {
+    question: "Jak se nazývají směsi s velikostí částic na hranici stejnorodých a různorodých směsí?",
+    answers: ["Koloidní směsi", "Prvky", "Sloučeniny", "Destiláty"],
+    correct: 0,
+    explanation: "Koloidní směsi mají částice větší než stejnorodé směsi, ale menší než běžné různorodé směsi."
+  },
+  {
+    question: "Co je typické pro koloidní roztoky?",
+    answers: ["Dochází v nich k rozptylu světla", "Jejich složky vždy vidíme okem", "Vždy se dají oddělit magnetem", "Jsou tvořeny pouze plyny"],
+    correct: 0,
+    explanation: "V koloidních roztocích dochází k rozptylu světla, což se nazývá Tyndallův efekt."
+  },
+  {
+    question: "Jak se nazývá rozptyl světla v koloidních roztocích?",
+    answers: ["Tyndallův efekt", "Destilační efekt", "Filtrační efekt", "Krystalizační efekt"],
+    correct: 0,
+    explanation: "Rozptyl světla v koloidních směsích se nazývá Tyndallův efekt."
+  },
+  {
+    question: "Která směs je stejnorodá?",
+    answers: ["Vzduch", "Písek ve vodě", "Olej ve vodě", "Křída ve vodě"],
+    correct: 0,
+    explanation: "Vzduch je stejnorodá plynná směs."
+  },
+  {
+    question: "Která směs je kapalný roztok?",
+    answers: ["Minerální voda", "Dým", "Mlha", "Pěna"],
+    correct: 0,
+    explanation: "Minerální voda je kapalná stejnorodá směs, tedy roztok."
+  },
+  {
+    question: "Která směs je pevný roztok?",
+    answers: ["Mosaz", "Mlha", "Šlehačka", "Kouř"],
+    correct: 0,
+    explanation: "Mosaz je slitina kovů, tedy pevný stejnorodý roztok."
+  },
+  {
+    question: "Co je bronz?",
+    answers: ["Slitina mědi a cínu", "Směs vody a oleje", "Roztok cukru ve vodě", "Pevná látka rozptýlená v plynu"],
+    correct: 0,
+    explanation: "Bronz je slitina kovů, konkrétně mědi a cínu."
+  },
+  {
+    question: "Co je mosaz?",
+    answers: ["Slitina mědi a zinku", "Slitina cínu a olova", "Směs vody a písku", "Koloidní směs bílkovin"],
+    correct: 0,
+    explanation: "Mosaz je slitina mědi a zinku."
+  },
+  {
+    question: "Jak se nazývá směs pevné látky rozptýlené v kapalině?",
+    answers: ["Suspenze", "Emulze", "Pěna", "Mlha"],
+    correct: 0,
+    explanation: "Suspenze je heterogenní směs pevné látky rozptýlené v kapalině."
+  },
+  {
+    question: "Která možnost je příkladem suspenze?",
+    answers: ["Písek ve vodě", "Olej ve vodě", "Vzduch", "Cukrová voda"],
+    correct: 0,
+    explanation: "Písek ve vodě je suspenze, protože pevná látka je rozptýlena v kapalině."
+  },
+  {
+    question: "Jak se nazývá směs dvou vzájemně nemísitelných kapalin?",
+    answers: ["Emulze", "Suspenze", "Dým", "Pěna"],
+    correct: 0,
+    explanation: "Emulze vzniká smícháním dvou vzájemně nemísitelných kapalin, například oleje a vody."
+  },
+  {
+    question: "Která možnost je příkladem emulze?",
+    answers: ["Olej a voda", "Písek a voda", "Vzduch", "Sklo"],
+    correct: 0,
+    explanation: "Olej a voda tvoří emulzi, protože jde o dvě vzájemně nemísitelné kapaliny."
+  },
+  {
+    question: "Jak se nazývá směs plynné látky v kapalině nebo pevné látce?",
+    answers: ["Pěna", "Mlha", "Dým", "Suspenze"],
+    correct: 0,
+    explanation: "Pěna je směs, ve které je plyn rozptýlen v kapalině nebo pevné látce."
+  },
+  {
+    question: "Která možnost je příkladem pěny?",
+    answers: ["Šlehačka", "Mlha", "Kouř", "Písek ve vodě"],
+    correct: 0,
+    explanation: "Šlehačka je pěna, protože obsahuje plyn rozptýlený v kapalině."
+  },
+  {
+    question: "Jak se nazývá kapalná látka rozptýlená v plynné látce?",
+    answers: ["Mlha", "Dým", "Suspenze", "Slitina"],
+    correct: 0,
+    explanation: "Mlha je aerosol, ve kterém jsou kapičky kapaliny rozptýleny v plynu."
+  },
+  {
+    question: "Jak se nazývá pevná látka rozptýlená v plynné látce?",
+    answers: ["Dým", "Mlha", "Emulze", "Roztok"],
+    correct: 0,
+    explanation: "Dým je aerosol tvořený pevnými částicemi rozptýlenými v plynu."
+  },
+  {
+    question: "Která metoda slouží k oddělování pevných složek z kapalných směsí?",
+    answers: ["Filtrace", "Destilace", "Krystalizace", "Chromatografie"],
+    correct: 0,
+    explanation: "Filtrace se používá k oddělení pevných složek z kapalných nebo plynných směsí."
+  },
+  {
+    question: "Co je filtrát?",
+    answers: ["Kapalina, která proteče přes filtr", "Pevná látka zachycená na filtru", "Kapalina získaná destilací", "Pevná látka vzniklá krystalizací"],
+    correct: 0,
+    explanation: "Filtrát je kapalná složka, která prošla filtrem."
+  },
+  {
+    question: "Kterou metodou oddělíme písek od vody?",
+    answers: ["Filtrací", "Destilací", "Sublimací", "Chromatografií"],
+    correct: 0,
+    explanation: "Písek je nerozpustná pevná látka, proto ho od vody oddělíme filtrací."
+  },
+  {
+    question: "Která metoda odděluje složky podle rozdílných teplot varu?",
+    answers: ["Destilace", "Filtrace", "Třídění", "Usazování"],
+    correct: 0,
+    explanation: "Destilace odděluje složky homogenních směsí na základě rozdílných teplot varu."
+  },
+  {
+    question: "Co je destilát?",
+    answers: ["Kapalina získaná kondenzací par při destilaci", "Pevná látka zachycená na filtru", "Směs pevné látky a kapaliny", "Nerozpustná složka usazená na dně"],
+    correct: 0,
+    explanation: "Destilát je kapalina, která vznikne ochlazením a kondenzací par při destilaci."
+  },
+  {
+    question: "Kterou metodou lze oddělit líh od vody?",
+    answers: ["Destilací", "Filtrací", "Tříděním", "Magnetickou separací"],
+    correct: 0,
+    explanation: "Líh a voda mají rozdílné teploty varu, proto se oddělují destilací."
+  },
+  {
+    question: "Která metoda se používá při získávání benzinu, nafty a petroleje z ropy?",
+    answers: ["Frakční destilace", "Filtrace", "Krystalizace", "Sublimace"],
+    correct: 0,
+    explanation: "Ropa se rozděluje destilací, protože její složky mají různé teploty varu."
+  },
+  {
+    question: "Které laboratorní sklo slouží ke kondenzaci par při destilaci?",
+    answers: ["Chladič", "Filtrační papír", "Dělící nálevka", "Třecí miska"],
+    correct: 0,
+    explanation: "Chladič ochlazuje páry, které se mění zpět na kapalinu."
+  },
+  {
+    question: "Která metoda odděluje pevné látky podle barvy, tvaru, hmotnosti nebo magnetismu?",
+    answers: ["Třídění", "Destilace", "Extrakce", "Krystalizace"],
+    correct: 0,
+    explanation: "Třídění využívá rozdíly ve vlastnostech pevných látek, například barvu, tvar, hmotnost nebo magnetismus."
+  },
+  {
+    question: "Která metoda se používá k oddělení železa od neželezných kovů ve sběrných dvorech?",
+    answers: ["Třídění pomocí magnetu", "Destilace", "Krystalizace", "Filtrace"],
+    correct: 0,
+    explanation: "Železo lze oddělit pomocí magnetu, protože je magnetické."
+  },
+  {
+    question: "Která separační metoda se používá při čištění obilí proudem vzduchu?",
+    answers: ["Třídění", "Destilace", "Chromatografie", "Sublimace"],
+    correct: 0,
+    explanation: "Proud vzduchu odděluje části podle hmotnosti, jde tedy o třídění."
+  },
+  {
+    question: "Která metoda odděluje nerozpustné složky na základě odlišné hustoty?",
+    answers: ["Usazování", "Filtrace", "Sublimace", "Chromatografie"],
+    correct: 0,
+    explanation: "Usazování odděluje složky směsi podle jejich hustoty."
+  },
+  {
+    question: "Jak lze urychlit usazování?",
+    answers: ["Centrifugací", "Zahřátím na bod varu", "Přidáním filtračního papíru", "Zmrazením"],
+    correct: 0,
+    explanation: "Usazování lze urychlit centrifugací, tedy odstřeďováním."
+  },
+  {
+    question: "Které zařízení se používá k urychlení sedimentace?",
+    answers: ["Centrifuga", "Chladič", "Kahan", "Třecí miska"],
+    correct: 0,
+    explanation: "Centrifuga urychluje sedimentaci pomocí rychlého otáčení."
+  },
+  {
+    question: "Kterou pomůckou lze oddělit vodu a olej?",
+    answers: ["Dělící nálevkou", "Filtračním papírem", "Chladičem", "Magnetem"],
+    correct: 0,
+    explanation: "Voda a olej mají rozdílnou hustotu a nemísí se, proto je lze oddělit dělící nálevkou."
+  },
+  {
+    question: "Která separační metoda se používá při rýžování zlata?",
+    answers: ["Usazování", "Destilace", "Sublimace", "Extrakce"],
+    correct: 0,
+    explanation: "Rýžování zlata využívá rozdílnou hustotu zlata a ostatních částic."
+  },
+  {
+    question: "Která dělící metoda slouží k oddělení rozpuštěné pevné látky v podobě krystalů?",
+    answers: ["Krystalizace", "Filtrace", "Destilace", "Třídění"],
+    correct: 0,
+    explanation: "Při krystalizaci se z roztoku vyloučí pevná složka ve formě krystalů."
+  },
+  {
+    question: "Kterou dělící metodou lze získat sůl z mořské vody?",
+    answers: ["Krystalizací", "Filtrací", "Magnetickou separací", "Chromatografií"],
+    correct: 0,
+    explanation: "Sůl z mořské vody lze získat krystalizací po odpaření vody."
+  },
+  {
+    question: "Která dělící metoda se používá k oddělování sublimujících látek ze směsí?",
+    answers: ["Sublimace", "Filtrace", "Usazování", "Extrakce"],
+    correct: 0,
+    explanation: "Sublimace odděluje látky, které přecházejí z pevného skupenství přímo do plynného."
+  },
+  {
+    question: "Na jakém principu funguje pevný osvěžovač vzduchu na WC?",
+    answers: ["Sublimace", "Filtrace", "Destilace", "Krystalizace"],
+    correct: 0,
+    explanation: "Pevný osvěžovač vzduchu postupně sublimuje, tedy přechází z pevného skupenství do plynného."
+  },
+  {
+    question: "Která metoda spočívá ve vyluhování složky do rozpouštědla?",
+    answers: ["Extrakce", "Destilace", "Sublimace", "Filtrace"],
+    correct: 0,
+    explanation: "Extrakce neboli vyluhování převádí složku směsi do rozpouštědla."
+  },
+  {
+    question: "Která separační metoda se uplatňuje při přípravě čaje ze sáčku?",
+    answers: ["Extrakce", "Destilace", "Krystalizace", "Chromatografie"],
+    correct: 0,
+    explanation: "Při přípravě čaje se látky z čajových lístků vyluhují do vody, jde o extrakci."
+  },
+  {
+    question: "Která dělící metoda odděluje složky podle rozdílné schopnosti vázat se ke dvěma látkám?",
+    answers: ["Chromatografie", "Filtrace", "Usazování", "Sublimace"],
+    correct: 0,
+    explanation: "Chromatografie využívá rozdílnou schopnost složek vázat se na pevnou a pohyblivou fázi."
+  },
+  {
+    question: "Která dělící metoda se používá ke zjišťování barviv nebo látek přidávaných do potravin?",
+    answers: ["Chromatografie", "Krystalizace", "Filtrace", "Třídění"],
+    correct: 0,
+    explanation: "Chromatografie se používá například ke zjišťování barviv a přidaných látek v potravinách."
+  },
+  {
+    question: "Která dělící metoda se využívá v antigenních rychlotestech a těhotenských testech?",
+    answers: ["Chromatografie", "Destilace", "Krystalizace", "Sublimace"],
+    correct: 0,
+    explanation: "Rychlotesty využívají princip chromatografie, při které se látky pohybují po testovacím proužku."
+  },
+  {
+    question: "Jaký roztok je nenasycený?",
+    answers: ["Roztok, ve kterém se za daných podmínek rozpouští další množství látky", "Roztok, ve kterém se už žádná látka nerozpustí", "Roztok s větším množstvím látky, než je běžně možné rozpustit", "Roztok bez rozpouštědla"],
+    correct: 0,
+    explanation: "Nenasycený roztok ještě může rozpustit další množství rozpouštěné látky."
+  },
+  {
+    question: "Jaký roztok je nasycený?",
+    answers: ["Roztok, ve kterém se za daných podmínek nerozpouští další množství látky", "Roztok bez rozpuštěné látky", "Roztok pouze z plynů", "Směs dvou nemísitelných kapalin"],
+    correct: 0,
+    explanation: "Nasycený roztok už za dané teploty a tlaku nerozpouští další množství látky."
+  },
+  {
+    question: "Jaký roztok je přesycený?",
+    answers: ["Roztok s větším množstvím rozpuštěné látky, než by se rozpustilo za normálních podmínek", "Roztok, který neobsahuje žádnou látku", "Roztok, který obsahuje pouze vodu", "Roztok, který vznikl filtrací"],
+    correct: 0,
+    explanation: "Přesycený roztok obsahuje více rozpuštěné látky, než by se za běžných podmínek rozpustilo."
+  },
+  {
+    question: "Co je rozpustnost?",
+    answers: ["Hmotnost látky, která se za dané teploty a tlaku rozpustí v určitém množství rozpouštědla", "Schopnost látky vypařovat se", "Rychlost usazování pevné látky", "Množství kapaliny, které proteče filtrem"],
+    correct: 0,
+    explanation: "Rozpustnost udává, kolik látky se rozpustí v určitém množství rozpouštědla za daných podmínek."
+  },
+  {
+    question: "Jak se většinou mění rozpustnost pevných látek se vzrůstající teplotou?",
+    answers: ["Stoupá", "Klesá", "Nemění se nikdy", "Přestává existovat"],
+    correct: 0,
+    explanation: "U většiny pevných látek rozpustnost se vzrůstající teplotou stoupá."
+  },
+  {
+    question: "U které uvedené látky se rozpustnost se vzrůstající teplotou snižuje?",
+    answers: ["Hydroxid vápenatý", "Chlorid sodný", "Cukr", "Ethanol"],
+    correct: 0,
+    explanation: "Hydroxid vápenatý je uveden jako výjimka, u které rozpustnost s rostoucí teplotou klesá."
+  },
+  {
+    question: "Co udává hmotnostní zlomek?",
+    answers: ["Zastoupení složky v roztoku desetinným číslem", "Zastoupení složky pouze v gramech", "Teplotu varu roztoku", "Hustotu rozpouštědla"],
+    correct: 0,
+    explanation: "Hmotnostní zlomek udává zastoupení složky v roztoku desetinným číslem."
+  },
+  {
+    question: "V jakém rozmezí se pohybuje hmotnostní zlomek?",
+    answers: ["Od 0 do 1", "Od 1 do 100", "Od 0 do 1000", "Od -1 do 1"],
+    correct: 0,
+    explanation: "Hmotnostní zlomek je bezrozměrné číslo a jeho hodnota se pohybuje od 0 do 1."
+  },
+  {
+    question: "Co udává hmotnostní procento?",
+    answers: ["Zastoupení složky v roztoku v procentech", "Hmotnost celé aparatury", "Teplotu varu směsi", "Velikost částic v koloidu"],
+    correct: 0,
+    explanation: "Hmotnostní procento vyjadřuje zastoupení složky v roztoku v procentech."
+  },
+  {
+    question: "Jak převedeme hmotnostní zlomek na hmotnostní procento?",
+    answers: ["Vynásobíme ho 100", "Vydělíme ho 100", "Přičteme 100", "Odečteme ho od 1"],
+    correct: 0,
+    explanation: "Hmotnostní zlomek převedeme na procenta tak, že ho vynásobíme 100."
+  },
+  {
+    question: "Jak převedeme hmotnostní procento na hmotnostní zlomek?",
+    answers: ["Vydělíme ho 100", "Vynásobíme ho 100", "Přičteme 1", "Odečteme ho od 100"],
+    correct: 0,
+    explanation: "Hmotnostní procento převedeme na hmotnostní zlomek tak, že ho vydělíme 100."
+  },
+  {
+    question: "Jaký hmotnostní zlomek odpovídá 25 %",
+    answers: ["0,25", "2,5", "25", "0,025"],
+    correct: 0,
+    explanation: "Procenta převedeme na hmotnostní zlomek vydělením 100, tedy 25 % = 0,25."
+  },
+  {
+    question: "Jaké hmotnostní procento odpovídá hmotnostnímu zlomku 0,6?",
+    answers: ["60 %", "6 %", "0,6 %", "600 %"],
+    correct: 0,
+    explanation: "Hmotnostní zlomek 0,6 vynásobíme 100, takže odpovídá 60 %."
+  },
+  {
+    question: "Jak vypočítáme hmotnost celého roztoku při smíchání rozpouštědla a rozpuštěné látky?",
+    answers: ["Sečteme hmotnost rozpouštědla a rozpuštěné látky", "Odečteme hmotnost látky od vody", "Vynásobíme hmotnost vody stem", "Použijeme pouze hmotnost rozpuštěné látky"],
+    correct: 0,
+    explanation: "Hmotnost celého roztoku je součet hmotnosti rozpouštědla a rozpuštěné látky."
+  },
+  {
+    question: "Jaký je vzorec pro hmotnostní zlomek složky A?",
+    answers: ["wA = mA / m", "wA = m / mA", "wA = mA + m", "wA = mA · 100"],
+    correct: 0,
+    explanation: "Hmotnostní zlomek složky A vypočítáme jako podíl hmotnosti složky a celkové hmotnosti roztoku."
+  },
+  {
+    question: "Co znamená mA ve vzorci pro hmotnostní zlomek?",
+    answers: ["Hmotnost rozpouštěné látky", "Hmotnost filtru", "Hmotnost chladiče", "Hmotnost destilátu"],
+    correct: 0,
+    explanation: "mA označuje hmotnost rozpouštěné látky nebo sledované složky."
+  },
+  {
+    question: "Jaký je hmotnostní zlomek soli v roztoku, který obsahuje 10 g soli a 100 g vody?",
+    answers: ["0,091", "0,1", "0,9", "9,1"],
+    correct: 0,
+    explanation: "Celková hmotnost roztoku je 110 g. Hmotnostní zlomek soli je 10 / 110 = 0,091."
+  },
+  {
+    question: "Kolik procent soli obsahuje roztok, ve kterém je 10 g soli a 150 g vody?",
+    answers: ["6,25 %", "10 %", "15 %", "93,75 %"],
+    correct: 0,
+    explanation: "Celková hmotnost roztoku je 160 g. Podíl soli je 10 / 160 · 100 = 6,25 %."
+  },
+  {
+    question: "Kolik procent vody je v roztoku, který obsahuje 6,25 % soli?",
+    answers: ["93,75 %", "6,25 %", "100 %", "160 %"],
+    correct: 0,
+    explanation: "Roztok má dohromady 100 %, takže voda tvoří 100 % - 6,25 % = 93,75 %."
+  },
+  {
+    question: "Kolik gramů vody odpovídá 150 ml vody, pokud platí, že 1 ml vody = 1 g?",
+    answers: ["150 g", "15 g", "1,5 g", "1500 g"],
+    correct: 0,
+    explanation: "U vody platí přibližně 1 ml = 1 g, proto 150 ml vody odpovídá 150 g."
+  }
     ];
 
     const state = {
